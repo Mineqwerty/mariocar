@@ -352,6 +352,7 @@
 #define MODEL_WATER_BOMB_SHADOW           0x55        // water_bomb_shadow_geo
 #define MODEL_KING_BOBOMB                 0x56        // king_bobomb_geo
 #define MODEL_THWOMP                      0x58 
+#define MODEL_PENGUIN                     0x57        // penguin_geo
 
 // group 4
 #define MODEL_MANTA_RAY                   0x54        // manta_seg5_geo_05008D14
@@ -378,7 +379,7 @@
 #define MODEL_SPINDRIFT                   0x54        // spindrift_geo
 #define MODEL_MR_BLIZZARD_HIDDEN          0x55        // mr_blizzard_hidden_geo
 #define MODEL_MR_BLIZZARD                 0x56        // mr_blizzard_geo
-#define MODEL_PENGUIN                     0x57        // penguin_geo
+
 
 // group 8
 #define MODEL_CAP_SWITCH_EXCLAMATION      0x54        // cap_switch_exclamation_seg5_dl_05002E00

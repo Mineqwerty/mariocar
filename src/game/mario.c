@@ -1688,7 +1688,7 @@ void func_sh_8025574C(void) {
 /**
  * Main function for executing Mario's behavior.
  */
-u16 *starNumberNeeded[] = {420, 1, 3, 10, 30, 2, 10, 1, 1, 10, 50, 100, 200, 1, 30, 1, 5, 80, 1, 20, 1, 1, 1, 1, 1, 1, 1, 30, 1, 1, 7, 1, 1};
+u16 *starNumberNeeded[] = {420, 1, 3, 10, 20, 2, 8, 1, 1, 10, 50, 100, 200, 1, 30, 1, 5, 80, 1, 20, 1, 1, 1, 1, 1, 1, 1, 30, 1, 1, 7, 1, 1};
 int starTimer;
 int existTimer;
 int pedTimer;
@@ -1700,13 +1700,7 @@ s32 execute_mario_action(struct MarioState *m) {
     s32 inLoop = TRUE;
     //object_step();
 
-if (existTimer >= 9000) {
-gMarioState->starReqs[26] = 1;
-}
-else {
-    existTimer +=1;
 
-}
 
 if (gMarioState->starReqs[16] > 0 && gMarioState->starReqs[16] < 5) {
     pedTimer += 1;

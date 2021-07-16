@@ -10,3 +10,4 @@
 #include "king_bobomb/geo.inc.c"
 #include "water_bubble/geo.inc.c"
 #include "thwomp/geo.inc.c"
+#include "penguin/geo.inc.c"

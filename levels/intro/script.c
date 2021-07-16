@@ -19,6 +19,7 @@
 #include "levels/intro/header.h"
 
 const LevelScript level_intro_splash_screen[] = {
+    EXIT_AND_EXECUTE(/*seg*/ 0x14, _introSegmentRomStart, _introSegmentRomEnd, level_main_menu_entry_1),
     INIT_LEVEL(),
     FIXED_LOAD(/*loadAddr*/ _goddardSegmentStart, /*romStart*/ _goddardSegmentRomStart, /*romEnd*/ _goddardSegmentRomEnd),
     LOAD_RAW(/*seg*/ 0x13, _behaviorSegmentRomStart, _behaviorSegmentRomEnd),
@@ -44,6 +45,7 @@ const LevelScript level_intro_splash_screen[] = {
 };
 
 const LevelScript level_intro_mario_head_regular[] = {
+    JUMP(script_intro_L4),
     INIT_LEVEL(),
     BLACKOUT(/*active*/ TRUE),
     FIXED_LOAD(/*loadAddr*/ _goddardSegmentStart, /*romStart*/ _goddardSegmentRomStart, /*romEnd*/ _goddardSegmentRomEnd),
@@ -68,6 +70,7 @@ const LevelScript level_intro_mario_head_regular[] = {
 };
 
 const LevelScript level_intro_mario_head_dizzy[] = {
+    JUMP(script_intro_L4),
     INIT_LEVEL(),
     BLACKOUT(/*active*/ TRUE),
     FIXED_LOAD(/*loadAddr*/ _goddardSegmentStart, /*romStart*/ _goddardSegmentRomStart, /*romEnd*/ _goddardSegmentRomEnd),

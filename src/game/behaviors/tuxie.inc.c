@@ -1,5 +1,8 @@
 // tuxie.c.inc
+#include "actors/common0.h"
 
+
+    
 void play_penguin_walking_sound(s32 walk) {
     s32 sound;
     if (o->oSoundStateID == 0) {
@@ -255,6 +258,12 @@ void small_penguin_free_actions(void) {
 }
 
 void bhv_small_penguin_loop(void) {
+    obj_set_hitbox(o, &sBreakableBoxHitbox);
+    if (cur_obj_was_attacked_or_ground_pounded() != 0) {
+        gMarioState->starReqs[26] = 1;
+        obj_explode_and_spawn_coins(46.0f, 1);
+        create_sound_spawner(SOUND_GENERAL_BREAK_BOX);
+    }
     switch (o->oHeldState) {
         case HELD_FREE:
             small_penguin_free_actions();

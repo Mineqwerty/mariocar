@@ -223,6 +223,7 @@ const LevelScript script_func_global_4[] = {
     LOAD_MODEL_FROM_GEO(MODEL_WATER_BOMB_SHADOW,       water_bomb_shadow_geo),
     LOAD_MODEL_FROM_GEO(MODEL_KING_BOBOMB,             king_bobomb_geo),
     LOAD_MODEL_FROM_GEO(MODEL_THWOMP,                  thwomp_geo),
+        LOAD_MODEL_FROM_GEO(MODEL_PENGUIN,                 penguin_geo),
     RETURN(),
 };
 
@@ -257,7 +258,6 @@ const LevelScript script_func_global_8[] = {
     LOAD_MODEL_FROM_GEO(MODEL_SPINDRIFT,               spindrift_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MR_BLIZZARD_HIDDEN,      mr_blizzard_hidden_geo),
     LOAD_MODEL_FROM_GEO(MODEL_MR_BLIZZARD,             mr_blizzard_geo),
-    LOAD_MODEL_FROM_GEO(MODEL_PENGUIN,                 penguin_geo),
     RETURN(),
 };
 

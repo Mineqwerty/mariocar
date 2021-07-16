@@ -1749,7 +1749,7 @@ const BehaviorScript bhvBreakableBox[] = {
     CALL_NATIVE(bhv_init_room),
     BEGIN_LOOP(),
         CALL_NATIVE(bhv_breakable_box_loop),
-        CALL_NATIVE(load_object_collision_model),
+        //CALL_NATIVE(load_object_collision_model),
     END_LOOP(),
     BREAK(),
 };

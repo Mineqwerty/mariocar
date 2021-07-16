@@ -16,4 +16,10 @@ UNUSED static const u64 binid_1 = 1;
 
 #include "thwomp/model.inc.c"
 #include "thwomp/collision.inc.c"
-UNUSED static const u64 binid_3 = 2;
+UNUSED static const u64 binid_2 = 2;
+
+#include "penguin/model.inc.c"
+#include "penguin/anims/data.inc.c"
+#include "penguin/anims/table.inc.c"
+#include "penguin/collision.inc.c"
+UNUSED static const u64 binid_3 = 3;
